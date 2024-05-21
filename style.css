@@ -1,8 +1,11 @@
+
 body, html {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
     background-color: #1f1f1f;
+    /* background-color: white; */
+    min-height: 2000px;
 }
 
 header {
@@ -21,21 +24,65 @@ header {
 .header-logo{
     height: 70px;
     width: auto;
+    z-index: 1001;
 }
 
 .fa-bars{
     margin-right: 50px;
     transition: color 0.3s ease;
+    cursor: pointer;
+    display: none;
 }
 
 .fa-bars:hover{
     color: #B8860B;
     transform: scale(1.03);
 }
+
+.slide-menu {
+    position: fixed;
+    top: -100%; 
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #111111;
+    transition: top 0.6s ease; 
+    z-index: 1000;
+}
+
+.slide-menu ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.slide-menu ul li{
+    padding: 10px 0;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.slide-menu ul li:hover{
+    background-color: #444;
+    cursor: pointer;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+
 .header-image-container {
     position: relative;
     width: 100%;
-    height: 800px;  
+    height: 700px;  
 }
 
 .header-image {
@@ -50,7 +97,8 @@ header {
 
 .text-content {
     padding: 20px;
-    height: 2000px;  
+    height: 2000px; 
+    color: white; 
 }
 
 .transparent {
@@ -61,3 +109,11 @@ header {
     background-color: #000000;
     color: #fff;
 }
+
+@media screen and (max-width: 1000px) {
+    .fa-bars{
+        display: block;
+    }
+
+}
+
