@@ -3,9 +3,10 @@ body, html {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: #1f1f1f;
+    background-color: #ffffff;
     /* background-color: white; */
     min-height: 2000px;
+    scroll-behavior: smooth;
 }
 
 header {
@@ -25,6 +26,7 @@ header {
     height: 70px;
     width: auto;
     z-index: 1001;
+    position: relative;
 }
 
 .fa-bars{
@@ -45,10 +47,12 @@ header {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #111111;
+    background-color: #ffffff;
     transition: top 0.6s ease; 
     z-index: 1000;
 }
+
+
 
 .slide-menu ul{
     list-style: none;
@@ -69,14 +73,19 @@ header {
 
 .close-button {
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 12px;
+    right: 12px;
     background-color: transparent;
     border: none;
-    color: #fff;
+    color: black;
     font-size: 24px;
     cursor: pointer;
+    transition: color 0.3s;
 }
+.close-button:hover{
+    color: rgb(203, 182, 119);
+}
+
 
 
 .header-image-container {
@@ -110,10 +119,71 @@ header {
     color: #fff;
 }
 
+.button{
+    width: 98%;
+    height: 60px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 10px;
+    text-align: left;
+    background-color: #ffffff;
+    font-size: 16px;
+    margin-left:12px ;
+    cursor: pointer;
+}
+
+.content {
+    margin-top: 400px;
+    padding: 20px;
+    min-height: 2000px;
+    color: black;
+}
+
+.overlay-page {
+    position: fixed;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    z-index: 1001; 
+    transition: left 0.6s ease;
+}
+
+.overlay-page.active {
+    left: 0; 
+}
+
+#back-Button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ffffff;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    bottom: -10px; 
+    right: -10px;  
+}
+
+#back-Button:hover {
+   text-decoration: underline;
+}
+
+
+
+
+
+
 @media screen and (max-width: 1000px) {
     .fa-bars{
         display: block;
     }
+    @media  screen and (max-width:800px) {
+        
+    }
+
 
 }
 
