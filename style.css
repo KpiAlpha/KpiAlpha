@@ -1,0 +1,292 @@
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    /* background-color: white; */
+    min-height: 2000px;
+    scroll-behavior: smooth;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    z-index: 1000; 
+    height: 45px; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-logo{
+    height: 70px;
+    width: auto;
+    z-index: 1001;
+    position: relative;
+}
+
+.fa-bars{
+    margin-right: 50px;
+    transition: color 0.3s ease;
+    cursor: pointer;
+    display: none;
+}
+
+.fa-bars:hover{
+    color: #B8860B;
+    transform: scale(1.03);
+}
+
+.slide-menu {
+    position: fixed;
+    top: -100%; 
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    transition: top 0.6s ease; 
+    z-index: 1000;
+}
+
+
+
+.slide-menu ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.slide-menu ul li{
+    padding: 10px 0;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.slide-menu ul li:hover{
+    background-color: #444;
+    cursor: pointer;
+}
+
+.close-button {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background-color: transparent;
+    border: none;
+    color: black;
+    font-size: 24px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+.close-button:hover{
+    color: rgb(203, 182, 119);
+}
+
+
+
+.header-image-container {
+    position: relative;
+    width: 100%;
+    height: 700px;  
+}
+
+.header-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content {
+    margin-top: 400px;  
+}
+
+.text-content {
+    padding: 20px;
+    height: 2000px; 
+    color: white; 
+}
+
+.transparent {
+    background-color: transparent;
+}
+
+.solid {
+    background-color: #000000;
+    color: #fff;
+}
+
+.button{
+    width: 98%;
+    height: 60px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 10px;
+    text-align: left;
+    background-color: #ffffff;
+    font-size: 16px;
+    margin-left:12px ;
+    cursor: pointer;
+}
+
+.content {
+    margin-top: 400px;
+    padding: 20px;
+    min-height: 2000px;
+    color: black;
+}
+
+.overlay-page {
+    position: fixed;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    z-index: 1001; 
+    transition: left 0.6s ease;
+}
+
+.overlay-page.active {
+    left: 0; 
+}
+
+#back-Button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ffffff;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    bottom: -10px; 
+    right: -10px;  
+}
+
+#back-Button:hover {
+   text-decoration: underline;
+}
+
+.discover {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    text-align: center;
+    opacity: 0; 
+    font-family: "Quicksand";
+    transition: opacity 0.9s ease-in-out, transform 0.9s ease-in-out; 
+
+}
+
+
+.quicksand-discover {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.second-row{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.second-row ul{
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+}
+.button-container{
+    display: flex;
+    justify-content: center;
+    overflow-x: auto;
+    white-space: nowrap;
+    -ms-overflow-style: none; 
+    scrollbar-width: none;
+
+}
+
+.button-container::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+.button-container button {
+    margin: 0 3px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: transparent;
+    color: grey;
+    border: none;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+    font-family: "Quicksand", sans-serif;
+}
+.button-container button:hover {
+    transform: scale(1.05);
+}
+.content-container {
+    margin-top: 30px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    font-family: "Quicksand", sans-serif;
+}
+
+.button-container button.active {
+    text-decoration: underline;
+    text-decoration-color: black; 
+    text-underline-offset: 15px;
+    text-decoration-thickness: 2px;
+    color: #000000;
+    
+}
+
+#infoBox {
+    max-width: 800px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+  
+
+  
+  
+  
+  
+
+
+
+
+@media screen and (max-width: 1000px) {
+    .fa-bars{
+        display: block;
+    }
+    @media  screen and (max-width:800px) {
+        
+    }
+
+
+}
+
