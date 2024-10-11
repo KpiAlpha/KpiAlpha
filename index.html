@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll Header</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="javascript/script.js"></script>
+    <script src="https://kit.fontawesome.com/f4efa66e1d.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Error in the code causing you to slide farther than you should on the screen -->
+    <header id="header">
+        <a href="index.html"> <img src="photos/Alpha_logo-removebg-preview.png" alt=""></a>
+
+        <i class="fa-solid fa-bars fa-2x"></i>
+
+        <div class="sliding-panel">
+            <img src="photos/Alpha_logo-removebg-preview.png" alt="">
+            <span class="close-btn"><i class="fa-solid fa-x"></i></span> <!-- Close button -->
+            <nav>
+                <!-- Navigation Links -->
+                <a href="#Alpha" class="sliding-dropdown-btn"><a href="HTML/alpha/alpha.html">ALPHA</a></a>
+                <a href="#about"><a href="HTML/kappi pi/kappi.html">KAPPA PI</a></a>
+                <a href="#services"><a href="HTML/The-Brotherhood/the-brotherhood.html">THE BROTHERHOOD</a></a>
+                <a href="#contact"><a href="HTML/Get Involved/get-involved.html">GET INVOLVED</a></a>
+                <a href="#scholarship"><a href="wendell-t-foster-scholarship.html">WENDELL T. FOSTER SCHOLARSHIP</a></a>
+                <a href="contact.html"><a href="contact.html">CONTACT</a></a>
+            </nav>
+        </div>
+        
+        
+
+
+        <nav id="nav-bar">
+            <div class="nav-left">
+                <ul>
+
+                    <li class="dropdown">
+                        <a href="HTML/alpha/alpha.html" class="dropbtn">Alpha</a>
+                        <div class="dropdown-content">
+                            <a style="color: #ffffff;" href="HTML/alpha/fraternity-history.html">Fraternity history</a>
+                            <a style="color: #ffffff;" href="HTML/alpha/jewel.html">Jewels</a>
+                            <a style="color: #ffffff;" href="HTML/alpha/famous-alphas.html">Famous Alphas</a>
+                            <a style="color: #ffffff;" href="HTML/alpha/national-partnerships.html">National Partnerships</a>
+                            <a style="color: #ffffff;" href="HTML/alpha/national-programs.html">National Programs</a>
+                            <a style="color: #ffffff;" href="HTML/alpha/the-alpha-shop.html">The Alpha Shop</a>
+                            <a style="color: #ffffff;" href="HTML/alpha/becoming-an-alpha.html">Becoming An Alpha</a>
+                        </div>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">Kappi Pi</a>
+                        <div class="dropdown-content">
+                            <a style="color: #ffffff;" href="HTML/kappi pi/president's-welcome.html">President's Welcome</a>
+                            <a style="color: #ffffff;" href="HTML/kappi pi/a-message-from-bro-davis.html">A message from Bro. Davis</a>
+                            <a style="color: #ffffff;" href="HTML/kappi pi/the-genesis-of-kappa-pi.html">The Genesis of Kappi Pi</a>
+                            <a style="color: #ffffff;" href="HTML/kappi pi/current-brother-graduates.html">Current Brothers/Graduates</a>
+                            <a style="color: #ffffff;" href="HTML/kappi pi/spring-18.html">Spring '18</a>
+                        </div>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">The Brotherhood</a>
+                        <div class="dropdown-content">
+                            <a style="color: #ffffff;" href="HTML/The-Brotherhood/kendrick-ashton-craig-dixon.html">Spotlight: Kendrick Ashton & Craig Dixon</a>
+                            <a style="color: #ffffff;" href="HTML/The-Brotherhood/thomas-roberts.html">Spotlight: Thomas Roberts</a>
+                            <a style="color: #ffffff;" href="HTML/The-Brotherhood/35-anniversary-reunion.html">35th Anniversary Reunion</a>
+                            <a style="color: #ffffff;" href="HTML/The-Brotherhood/brotherhood-smoke.html">Brotherhood Smoke</a>
+                            <a style="color: #ffffff;" href="HTML/The-Brotherhood/40-anniversary-reunion.html">40th Anniversay Reunion</a>
+                        </div>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">Get Involved</a>
+                        <div class="dropdown-content">
+                            <a style="color: #ffffff;" href="HTML/Get Involved/distinguished-gentlemen.html">Distinguished Gentlemen</a>
+                            <a style="color: #ffffff;" href="HTML/Get Involved/chapter-events.html">Chapter Events</a>
+                            <a style="color: #ffffff;" href="HTML/Get Involved/miss-black-gold.html">Miss Black & Gold</a>
+                        </div>
+                    </li>
+
+
+                </div>
+            <div class="nav-right">
+                <ul>
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">Wendell T.Foster Scholarship</a>
+                        <div class="dropdown-content">
+                            <a style="color: #ffffff;" href="#">Submenu 1</a>
+                            <a style="color: #ffffff;" href="#">Submenu 1</a>
+                        </div>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="contact.html" class="dropbtn">Contact</a>
+                        <div class="dropdown-content">
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Intro Section -->
+    <section id="intro">
+        <div class="arrow arrow-left" onclick="prevSlide()"><i class="fa-solid fa-chevron-left"></i></div>
+        <div class="arrow arrow-right" onclick="nextSlide()"><i class="fa-solid fa-chevron-right"></i></div>
+        <div class="intro-images">
+            <!-- This is were you can put in photos intro box -->
+            <img src="photos/brotherhood.jpg" class="intro-image" alt="Intro Image 1">
+            <img src="photos/sphinx-head.jpg" class="intro-image" alt="Intro Image 2"> <!-- This needs to be changed-->
+            <img src="photos/trophie.jpg" class="intro-image" alt="Intro Image 3">
+            
+        </div>
+        <div class="intro-content">
+            <h1>Welcome</h1>
+            <h2>PHROZEN FOR OVER 40 YEARS</h2>
+            <p>MANLY DEEDS, SCHOLARSHIP, AND LOVE FOR ALL MANKIND</p>
+        </div>
+    </section>
+
+    <section class="information-box">
+            <!-- <img src="photos/76-300x296.png" alt=""> -->
+
+            <ul>
+                <li>12.04.06</li>
+                <li>CCJKMOT</li>
+                <li>05.31.75</li>
+                <li>AFJJLOSW</li>
+            </ul>
+
+            <p>
+                Following the principles of its Jewels, the Kappa Pi Chapter of Alpha Phi Alpha Fraternity was chartered at the College of William & Mary on May 31, 1975 by Timothy Earnest Allmond, Jr., Nathaniel Adeoluwa Folarin, William Lorenzo Jackson, Jr., Sheldon Jerome Johnson, John Oscar Little, Jr., Adeyemo Folusho Olanrewaju, Ronald Harvey Smoot, and Willie George Webb Walton. Though limited in numbers since its inception, the brothers of the Kappa Pi chapter have been dedicated to service on campus and in the Williamsburg community.
+            </p>
+
+            <p>Throughout our history, brothers have served as mentors at the Chicahominy Youth Center, D.J. Montague Elementary School, the Williamsburg Head Start program, and Toano and Berkley Middle Schools as a part of the Go to High School, Go to College Campaign. Additionally, brothers of our chapter have served with Housing Partnerships and Adopt-A-Highway, and organized our “A Voteless People is a Hopeless People” voter registration campaigns. These activities can prove to be very demanding for a chapter which normally functions with less than ten brothers. As a result, brothers must put aside personal agendas for the good of the fraternity. Rhode Scholar and University of Georgia English professor, Dr. Andrew Zawacki, explained this well during his days as an undergraduate, “Most of my life I had been pretty much an individual. However, the most important lesson that I learned as a member of Alpha Phi Alpha is that unity does not have to mean conformity, and that it is healthy to come together with others if you believe in a worthy cause.”
+            </p>
+
+            <p>To the youths who look onward and upward towards the light, we invite you to explore the rich history of our chapter, to examine our current service initiatives, and to get involved with the brothers of the Kappa Pi Chapter.
+            </p>
+
+    </section>
+
+
+    <section class="twin-boxes">
+        <div class="box">
+            <img src="photos/roman.jpg" alt="Background Image 1" class="box-image">
+            <div class="box-content">
+                <h1>Alpha</h1>
+               <button><a href="HTML/alpha/alpha.html">Discover</a></button>
+            </div>
+        </div>
+
+
+        <div class="box">
+            <img src="photos/satchel.jpg" alt="Background Image 2" class="box-image">
+            <div class="box-content">
+               <h1>Kappi Pi</h1>
+               <button><a href="HTML/kappi pi/">Discover</a></button>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <section class="first-of-three">
+        <a href="HTML/The-Brotherhood/the-brotherhood.html" class="first-of-three-link">
+            <img src="photos/smoke.jpg" alt="Background image" class="background-img">
+            <div class="first-of-three-content">
+                <h1>THE BROTHERHOOD</h1>
+                <p>Scholars. Leaders. Brothers.</p>
+            </div>
+        </a>
+    </section>
+    
+    
+    
+
+    <section class="second-of-three">
+        <a href="HTML/Get Involved/get-involved.html" class="second-of-three-link">
+            <img src="photos/group-pose.jpg" alt="Background image" class="background-img">
+            <div class="second-of-three-content">
+                <h1>GET INVOLVED TODAY</h1>
+                <p id="day"></p>
+                <p id="date"></p>
+                <p id="month"></p>
+                <p id="year"></p>
+            </div>
+        </a>
+    </section>
+    
+
+
+
+    <section class="third-of-three">
+        <!-- Add ther insta -->
+        <!-- Previous Wesbite -->
+        <!-- Facebook -->
+        <!-- Tribelink -->
+
+
+        <div class="social-media">
+            <p><a href="https://tribelink.wm.edu/organization/alphaphialpha">Tribelink</a></p>
+            <p><a href="https://kappapi1906.weebly.com">Previous Homepage</a></p>
+            <p><a href="https://apa1906.net">National Homepage</a></p>
+            <p><a href="https://www.instagram.com/kpi_alphas">Instagram</a></p>
+            <p><a href="https://www.facebook.com/KappaPi1975/">Facebook</a></p>
+            <p><a href="">Email</a></p>
+        </div>
+
+
+    </section>
+    
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const date = new Date();
+
+            const months = [
+                "January", "February", "March", "April", "May", "June",
+                "July", "August", "September", "October", "November", "December"
+            ];
+            
+            const days = [
+                "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"
+            ];
+
+            const month = months[date.getMonth()];
+            const day = days[date.getDay()];
+            const currentDate = date.getDate();
+            const year = date.getFullYear();
+
+            document.getElementById("month").textContent = month;
+            document.getElementById("day").textContent = day;
+            document.getElementById("date").textContent = currentDate;
+            document.getElementById("year").textContent = year;
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const faBars = document.querySelector('.fa-bars');
+            const slidingPanel = document.querySelector('.sliding-panel');
+            const closeBtn = document.querySelector('.close-btn');
+
+           
+            faBars.addEventListener('click', function() {
+                slidingPanel.style.top = '0'; 
+            });
+
+           
+            closeBtn.addEventListener('click', function() {
+                slidingPanel.style.top = '-100%';
+            });
+        });
+
+        document.querySelector('.fa-bars').addEventListener('click', function() {
+            document.querySelector('.sliding-panel').style.display = 'block'; // Show the panel
+        });
+
+        document.querySelector('.close-btn').addEventListener('click', function() {
+            document.querySelector('.sliding-panel').style.display = 'none'; // Hide the panel
+        });
+    </script>
+</body>
+</html>
